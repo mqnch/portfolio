@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Portfolio of Felix Pan - Full-stack Developer & AI Enthusiast",
     type: "website",
   },
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({
