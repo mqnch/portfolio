@@ -1,0 +1,18 @@
+/* stylelint-disable-next-line */
+@tailwind base;
+/* stylelint-disable-next-line */
+@tailwind components;
+/* stylelint-disable-next-line */
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-white text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100;
+    overflow-x: hidden;
+  }
+}
