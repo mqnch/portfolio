@@ -11,11 +11,11 @@ const fadeInUp = {
 
 const workExperience = [
   {
-    company: "CalCo",
+    company: "CalendarCompanion",
     role: "Co-founder & Lead Software Developer",
     location: "Toronto, ON",
     date: "Sep 2025 — Present",
-    logo: "/logos/calco.png",
+    logo: "/logos/cclogosmall.png",
     logoBg: "bg-white-500",
   },
   {
@@ -156,12 +156,12 @@ export default function Home() {
                 mathematics @ the university of waterloo
               </a>
               . i take pride in projects that i can stand behind: i'm currently
-              working on a{" "}
+              working on{" "}
               <a
                 href="#experience"
                 className="font-normal text-gray-900 underline decoration-1 underline-offset-4 transition-colors hover:text-highlight/80 dark:text-gray-200"
               >
-                CalCo
+                CalendarCompanion
               </a>
               , as well as a{" "}
               <a

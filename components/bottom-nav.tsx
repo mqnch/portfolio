@@ -80,7 +80,7 @@ export function BottomNav() {
           </motion.a>
 
           <motion.a
-            href="mailto:felixpan@uwaterloo.ca"
+            href="mailto:felix.pan@uwaterloo.ca"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="rounded-full p-2 transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
