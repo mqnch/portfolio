@@ -53,13 +53,6 @@ const education = [
     logo: "/logos/uwaterloo.svg",
     logoBg: "bg-white border border-gray-300",
   },
-  {
-    institution: "St. Theresa of Lisieux Secondary School",
-    degree: "Ontario Secondary School Diploma (OSSD)",
-    date: "2021 — 2025",
-    logo: "/logos/stl.png",
-    logoBg: "bg-green-100",
-  },
 ];
 
 const projects = [
@@ -267,7 +260,7 @@ export default function Home() {
                         alt={`${edu.institution} logo`}
                         width={40}
                         height={40}
-                        className="h-full w-full object-contain p-0.5"
+                        className="h-full w-full object-contain"
                         unoptimized
                       />
                     ) : (
