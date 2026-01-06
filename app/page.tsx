@@ -19,14 +19,6 @@ const workExperience = [
     logoBg: "bg-white-500",
   },
   {
-    company: "WATOnomous",
-    role: "AI/Autonomous Software Engineer",
-    location: "Waterloo, ON",
-    date: "Sep 2025 — Present",
-    logo: "/logos/wato.png",
-    logoBg: "bg-blue-600",
-  },
-  {
     company: "W.E Global",
     role: "Robotics Instructor",
     location: "Markham, ON",
@@ -57,6 +49,14 @@ const education = [
 
 const projects = [
   {
+    title: "getajobchud.com",
+    description:
+      "Website that aggregates internships from SimplifyJobs and helps you track your applications.",
+    tech: ["Next.js", "React", "Typescript", "Tailwind CSS", "Supabase"],
+    image: "/projects/jobmaxxing.png",
+    github: "https://github.com/mqnch/jobmaxxing",
+  },
+  {
     title: "Self-Learning Chess AI",
     description:
       "AlphaZero-style chess engine with Monte Carlo Tree Search (MCTS) and self-play reinforcement learning using Pytorch and CUDA. Achieved 1800 Elo vs. Stockfish Depth 3 in <72 hours of training.",
@@ -65,19 +65,20 @@ const projects = [
     github: "https://github.com/mqnch",
   },
   {
+    title: "Event-Date-Time Natural Language Parser",
+    description:
+      "Local-first Flask API that parses free-form text into structured JSON for calendar events and reminders.",
+    tech: ["Python", "Flask", "SpaCy", "Dateparser"],
+    image: "/projects/datenlp.png",
+    github: "https://github.com/mqnch/event-date-time-nlp",
+  },
+  {
     title: "MNIST Neural Network",
     description:
       "Neural network from scratch with modular, vectorized NumPy code, using He initialization, ReLU activation, and Adam optimization on the MNIST dataset to achieve 95% test accuracy.",
     tech: ["Python", "ML"],
     image: "/projects/mnist.png",
     github: "https://github.com/mqnch/numpy-mnist-nn",
-  },
-  {
-    title: "Personal Portfolio Website",
-    description: "You're on it right now :)",
-    tech: ["React", "Typescript", "Tailwind CSS"],
-    image: "/projects/website.png",
-    github: "https://github.com/mqnch",
   },
 ];
 
@@ -326,9 +327,22 @@ export default function Home() {
                     )}
                   </div>
                   <div className="p-6">
-                    <h3 className="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-                      {project.title}
-                    </h3>
+                    {project.title === "getajobchud.com" ? (
+                      <h3 className="mb-3 text-2xl font-semibold">
+                        <a
+                          href="https://www.getajobchud.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-highlight transition-colors hover:text-highlight/80 hover:underline dark:text-highlight-dark dark:hover:text-highlight-dark/80"
+                        >
+                          {project.title}
+                        </a>
+                      </h3>
+                    ) : (
+                      <h3 className="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+                        {project.title}
+                      </h3>
+                    )}
                     <p className="mb-4 leading-relaxed text-gray-600 dark:text-gray-400">
                       {project.description}
                     </p>
